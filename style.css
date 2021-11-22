@@ -1,0 +1,139 @@
+body{
+    background: #de302f;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.container_inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input_data{
+    background: #de302f;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    margin-left: 15px;
+    color: white;
+    font-size: 1em;
+}
+.function{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button{
+    background: #de302f;
+    height: 65px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 15px;
+    color: #ff9097;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.function_output{
+    height: 100px;
+    background-color: #de302f;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 10px 15px 10px;
+    overflow-y: auto;
+
+}
+.textarea_data{
+    background: #de302f;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 150px;
+    width: 300px;
+    margin-left: 15px;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*Cache decorator*/
+.cache{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+}
+.operator{
+    text-align: center;
+    background: #de302f;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    color: white;
+    font-size: 1em;
+
+}
+.cache_out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cache_fun{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.submit{
+    margin-top: -80px;
+}

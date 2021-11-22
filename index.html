@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>P2</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Array Processing Tool</div>
+            <div class="input">
+                <p>Input array</p>
+                <input type="text" class="input_data" id="arrayTool">
+            </div>
+            <p>Functions</p>
+            <div class="function">
+                <div class="block">
+                    <button class="function_button" id="sub-sum" onclick="subSum()">Sub Sum</button>
+                    <div class="function_output" id="subSum_output"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" id="search" onclick="search()">Search</button>
+                    <div class="function_output" id="search_output"></div>
+                </div>
+                <div class="block">
+                    <button class="array_tool_selection" id="selection" onclick="selection()">Selection</button>
+                    <div class="function_output" id="selection_output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Date display formatter</div>
+            <div class="input">
+                <p>Input date</p>
+                <input type="text" class="input_data" id="date">
+            </div>
+            <p>Foramt</p>
+            <div class="function">
+                <div class="block">
+                    <button class="function_button" onclick="dashDate()">DD-MM-YYYY</button>
+                    <div class="function_output" id="dashDate"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="fullMonth()">DD Month YYYY</button>
+                    <div class="function_output" id="fullMonth"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="yearmonthday()">YYYYMMDD</button>
+                    <div class="function_output" id="YYYMMDD"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="year_month_day()">YYYY-MM-DD</button>
+                    <div class="function_output" id="YYY_MM_DD"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="dateDiff()">Years from now</button>
+                    <div class="function_output" id="dateDiff"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Text Formatter</div>
+            <div class="input">
+                <p>Input string</p>
+                <textarea name="text" rows="14" cols="10" wrap="soft" class="textarea_data" id="inputText"></textarea>
+            </div>
+            <p>Wrap by:</p>
+            <div class="function">
+                <div class="block">
+                    <button class="function_button" onclick="wrapByWord()">Word</button>
+                    <div class="function_output" id="wordWrap"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="wrapBySymbol()">Symbol</button>
+                    <div class="function_output" id="symbolWrap"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="wrapbySentence()">Sentence</button>
+                    <div class="function_output" id="sentenceWrap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Calculator</div>
+            <div class="input">
+                <p>Input numbers</p>
+                <input type="text" class="input_data" id="numberX">
+                <input type="text" class="input_data" id="numberY">
+            </div>
+            <p>Math functions</p>
+            <div class="function">
+                <div class="block">
+                    <button  class="function_button" onclick="sum()">+</button>
+                    <div class="function_output" id="sum"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="difference()">-</button>
+                    <div class="function_output"  id="difference"></div>
+                </div>
+                <div class="block">
+                    <button  class="function_button" onclick="multiplication()">*</button>
+                    <div class="function_output" id="multiplication"></div>
+                </div>
+                <div class="block">
+                    <button  class="function_button" onclick="division()">/</button>
+                    <div class="function_output" id="division"></div>
+                </div>
+                <div class="block">
+                    <button  class="function_button" onclick="remainder()">Remainder</button>
+                    <div class="function_output" id="remainder"></div>
+                </div>
+                <div class="block">
+                    <button  class="function_button" onclick="degree()">degree</button>
+                    <div class="function_output" id="degree"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Array sort</div>
+            <div class="input">
+                <p>Input array</p>
+                <input type="text" class="input_data" id="arraySort">
+            </div>
+            <p>Sorting</p>
+            <div class="function">
+                <div class="block">
+                    <button class="function_button" onclick="insertionSort()">Insertion</button>
+                    <div class="function_output" id="insertion"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="bubbleSort()">Bubble</button>
+                    <div class="function_output" id="bubble"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="mergeSort()">Merge</button>
+                    <div class="function_output" id="merge"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="quickSort()">QuickSort</button>
+                    <div class="function_output" id="quickSort"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Binary converter</div>
+            <div class="input">
+                <p>Input a  number</p>
+                <input type="text" class="input_data" id="number">
+                <form id="systems">
+                    <input type="radio" name="system" value="binary">binary
+                    <input type="radio" name="system" value="decimal" checked>decimal
+                    <input type="radio" name="system" value="hexadecimal">hexadecimal
+                </form>
+            </div>
+            <p>Convert to</p>
+            <div class="function">
+                <div class="block">
+                    <button class="function_button" onclick="binary()">Binary</button>
+                    <div class="function_output" id="binary_output"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="decimal()">Decimal</button>
+                    <div class="function_output" id="decimal_output"></div>
+                </div>
+                <div class="block">
+                    <button class="function_button" onclick="hexadecimal()">Hexadecimal</button>
+                    <div class="function_output" id="hexadecimal_output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="bar">Caching calculator</div>
+            <div class="input">
+                <input type="text" class="input_data" id="cacheX">
+                <input type="text" class="operator">
+                <input type="text" class="input_data" id="cacheY">
+            </div>
+            <br>
+            <div class="cache">
+                <div class="cache_fun">
+                    <p>Choose cache functions</p>
+                    <form action="#" class="cache_fun">
+                        <input type="checkbox" class="checkbox" value="sum">Sum
+                        <input type="checkbox" class="checkbox" value="diff">Difference
+                        <input type="checkbox" class="checkbox" value="mult">Multiplication
+                        <input type="checkbox" class="checkbox" value="div">Division
+                    </form>
+
+                </div>
+                <div class="cache_out">
+                    <p>Choose cache rules</p>
+                    <form action="#" class="cache_rule" id="cache_rule">
+                        <input type="radio" name="setting" class="checkbox" value="odd" checked>Odd
+                        <input type="radio" name="setting" class="checkbox" value="even">Even
+                    </form>
+                </div>
+
+            </div>
+            <button class="submit" onclick="generateParams()">submit</button>
+            <div class="block">
+                <br>
+                <button  class="function_button" onclick="cache()">Compute</button>
+                <div class="function_output" id="cache_output"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

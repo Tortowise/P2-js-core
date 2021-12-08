@@ -26,7 +26,7 @@ function unfold(array, callback, initialValue = 40) {
 
 function fold(array, callback, startValue = 0) {
   for (let i = 0; i < array.length; i++) {
-    callback(startValue, array[i]);
+    startValue = callback(startValue, array[i]);
   }
   return startValue;
 }

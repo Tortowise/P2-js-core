@@ -1,0 +1,29 @@
+{
+  "name": "p2",
+  "version": "1.0.0",
+  "description": "JS-core project",
+  "main": "script.js",
+  "dependencies": {
+    "prettier": "^2.5.0",
+    "sanitize.css": "^13.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tortowise/P2-js-core.git"
+  },
+  "keywords": [
+    "js",
+    "JavaScript",
+    "JS"
+  ],
+  "author": "Egor Dubeshko <tortowise@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tortowise/P2-js-core/issues"
+  },
+  "homepage": "https://github.com/Tortowise/P2-js-core#readme"
+}
